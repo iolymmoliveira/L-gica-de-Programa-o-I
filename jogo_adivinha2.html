@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pularLinha(){
+		document.write("<br><br>");
+	}
+
+	function mostrar (texto){
+		document.write (texto);
+		pularLinha();
+	}
+
+	function sortear (n){
+		
+		return Math.round(Math.random()*n);
+	}
+
+	var numeroPensado = sortear(10);
+	var chute = parseInt(prompt ("Por favor, digite seu chute:"));
+	
+	if (chute == numeroPensado){
+		mostrar (" Parabéns!!!  : )");
+		mostrar (" Você ACERTOU!");
+	}
+
+	else{
+		if (chute>numeroPensado){
+			mostrar (" Você ERROU! : ( ");
+			mostrar ( " Seu número é MAIOR que o número pensado.");
+		}
+		else{
+			mostrar (" Você ERROU! : ( ");
+			mostrar (" Seu número é MENOR que o número pensado.");
+		}
+	}
+
+</script>

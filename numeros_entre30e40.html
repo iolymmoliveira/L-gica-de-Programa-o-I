@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pularLinha () {
+		document.write ("<br><br>");
+	}
+
+	function mostrar (texto){
+		document.write (texto);
+		pularLinha ();
+	}
+
+	var n1 = 30;
+	var n2 = 40;
+	
+	mostrar (" Os números entre " + n1 + " e " + n2 + " com excessão do 33 e 37 são:");
+
+	while (n1 <= n2){
+		
+		if(n1!=33 && n1!=37){
+			mostrar (n1);
+		}
+
+		n1 = n1 + 1;
+		
+	}
+
+
+	mostrar ("FIM !!!");
+
+
+</script>

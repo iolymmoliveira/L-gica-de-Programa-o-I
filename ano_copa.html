@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pularLinha(){
+		document.write("<br><br>");
+	}
+
+	function mostrar (texto){
+		document.write (texto);
+		pularLinha();
+	}
+
+	var limiteAno = parseInt(prompt("Por favor, entre com o Ano Limite: "));
+
+	var anoCopa = 1930;
+
+	var cont = 0;
+
+	while (anoCopa <= limiteAno){
+	cont = cont + 1;
+	mostrar (" No ano " + anoCopa + " houve copa!");
+	anoCopa = anoCopa + 4;
+	}
+
+	mostrar (" Houve um total de " + cont + " copas no período de 1930 até " + limiteAno + ".");
+
+	mostrar ("FIM !!!");
+
+</script>

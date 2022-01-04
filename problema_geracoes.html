@@ -1,0 +1,22 @@
+<meta charset="UTF-8"> 
+
+<script>
+	
+	function pularLinha(){
+		document.write("<br><br>");
+	}
+
+	function mostrar (texto){
+		document.write (texto);
+		pularLinha();
+	}
+
+	var anoAtual = 2021;
+	var anoDescobrimento = 1500;
+	var geracoes = 28;
+	var qtdeGeracoes = Math.round((anoAtual-anoDescobrimento)/geracoes);
+
+	pularLinha();
+	mostrar ("Se passaram " + qtdeGeracoes + " gerações.");
+
+</script>

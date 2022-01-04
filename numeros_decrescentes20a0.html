@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pularLinha () {
+		document.write ("<br><br>");
+	}
+
+	function mostrar (texto){
+		document.write (texto);
+		pularLinha ();
+	}
+
+	var n1 = 20;
+	var n2 = 0;
+	
+	mostrar (" Os números, em ordem descrescente, entre " + n1 + " e " + n2 + " são:");
+
+	while (n1 >= n2){
+		
+		mostrar (n1);
+		n1 = n1 - 1;
+		
+	}
+
+
+	mostrar ("FIM !!!");
+
+
+</script>

@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pularLinha () {
+		document.write ("<br><br>");
+	}
+
+	function mostrar (texto){
+		document.write (texto);
+		pularLinha ();
+	}
+
+	var loginCadastrado = "ioly";
+	var senhaCadastrada = "iolyerenato";
+
+	var maxTentativas = 3;
+	var tentativaAtual = 1;
+
+	while (tentativaAtual<=maxTentativas){
+
+		var loginInformado = prompt (" Informe seu Login:");
+		var senhaInformada = prompt (" Informe sua Senha:");
+
+	
+		if (loginInformado==loginCadastrado && senhaInformada==senhaCadastrada){
+			alert ("Bem Vindo ao Sistema! " + loginInformado);
+			tentativaAtual = maxTentativas;
+		}
+		else {
+			if(tentativaAtual==3){
+				alert ("Número permitido de Tentativas ultrapassado!");
+			}
+			else{
+				alert ("Login ou Senha Inválidos!");
+				alert ("Tente Novamente.");
+				alert ("Você ainda possui " + (maxTentativas-tentativaAtual) + " tentativa(s).")
+			}
+		}
+		tentativaAtual += 1;
+	}
+
+</script>

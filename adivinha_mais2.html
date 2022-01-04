@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo!</button>
+
+
+<script>
+	
+	var meusSegredos = [2,5,9,7];
+
+	var input = document.querySelector("input");
+	input.focus();
+
+	function verificar (){
+
+		var segredoEncontrado = false;
+
+		for (var posicao = 0; posicao<meusSegredos.length; posicao++) {
+			if (input.value==meusSegredos[posicao]){
+				alert ("Você ACERTOU!!!");
+				segredoEncontrado = true;
+				break;
+			}
+		}
+
+			if (segredoEncontrado == false){
+				alert ("Você ERROU!!!!!");
+			}
+
+			input.value = "";
+			input.focus();
+	}
+
+	var button = document.querySelector("button");
+
+	button.onclick = verificar;
+
+</script>

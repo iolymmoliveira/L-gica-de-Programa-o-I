@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pularLinha () {
+		document.write ("<br><br>");
+	}
+
+	function mostrar (texto){
+		document.write (texto);
+		pularLinha ();
+	}
+
+	var n1 = 1;
+	var n2 = 100;
+	
+	mostrar (" Os números pares entre 0 e 100 são:");
+
+	while (n1 <= n2){
+		var cont = 2;
+		if(n1%2 == 0){
+			cont = cont + n1;
+		}
+		else{
+			n1 = n1 + 1;
+			cont = cont + n1;
+		}
+
+		mostrar (n1);
+		n1 = n1 + 2;
+	}
+
+
+	mostrar ("FIM !!!");
+
+
+</script>

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1><big>Receitas da Ioly Oliveira.</big></h1>
+
+<script>
+
+    var listaIngredientes = [];
+
+    var quantidade = parseInt(prompt("Qual a quantidade de Ingredientes esta receita possui?"));
+
+    var cont = 1;
+
+    while (cont<=quantidade) {
+
+        var ingredienteInserido = prompt("Informe o ingrediente " + cont);
+        var ingredienteEncontrado = false;
+
+			for (var posicao = 0; posicao<listaIngredientes.length; posicao++){
+				if(ingredienteInserido==listaIngredientes[posicao]){
+					ingredienteEncontrado = true;
+					break;
+				}
+ 			}
+ 			if(ingredienteEncontrado==false){
+ 				listaIngredientes.push(ingredienteInserido);
+ 				cont++;
+ 			}
+    	}
+
+    console.log(listaIngredientes);
+
+</script>
